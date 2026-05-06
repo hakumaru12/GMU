@@ -44,7 +44,7 @@ pip install -r requirements.txt
 ### Basic Usage
 Run the script with:
 ```bash
-python download_playlist.py
+python GMU.py
 ```
 
 The script will prompt you for:
@@ -59,17 +59,17 @@ The script will prompt you for:
 
 **Interactive mode (with prompts):**
 ```bash
-python download_playlist.py
+python GMU.py
 ```
 
 **Command-line arguments:**
 ```bash
-python download_playlist.py "https://music.apple.com/playlist/..." --cookies-path "/path/to/cookies.txt"
+python GMU.py "https://music.apple.com/playlist/..." --cookies-path "/path/to/cookies.txt"
 ```
 
 **Multiple URLs:**
 ```bash
-python download_playlist.py "https://music.apple.com/playlist/..." "https://music.apple.com/song/..." --cookies-path "/path/to/cookies.txt"
+python GMU.py "https://music.apple.com/playlist/..." "https://music.apple.com/song/..." --cookies-path "/path/to/cookies.txt"
 ```
 
 ## Features
