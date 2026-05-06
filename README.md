@@ -9,6 +9,8 @@
 # GMU
 The tool that makes Gamdi (Apple Music downloader) more useful.
 
+This repository provides `GMU.py`, a small wrapper around the `gamdl` library to download Apple Music playlists, songs and videos using a Netscape-format `cookies.txt`.
+
 ## Installation
 
 ### Requirements
@@ -46,6 +48,17 @@ Run the script with:
 ```bash
 python GMU.py
 ```
+
+The script supports the following options (defaults shown):
+
+- `--cookies-path`: Path to Netscape-format `cookies.txt` (default prompts to `Downloads/cookies.txt`).
+- `--batch-size` (int, default `0`): Number of items per batch. `0` downloads all at once.
+- `--concurrency` (int, default `1`): Number of parallel downloads inside each batch.
+- `--windows` (int, default `1`): On Windows, split URLs/playlists into multiple console windows.
+
+Hidden/internal options used by worker subprocesses:
+
+- `--window-worker`, `--playlist-url`, `--playlist-track-start`, `--playlist-track-end` (not for interactive use).
 
 The script will prompt you for:
 1. Path to `cookies.txt`
@@ -122,12 +135,23 @@ pip install -r requirements.txt
 ### 基本的な使用方法
 以下のコマンドでスクリプトを実行します：
 ```bash
-python download_playlist.py
+python GMU.py
 ```
+
+スクリプトは以下のオプションをサポートしています（既定値を記載）：
+
+- `--cookies-path`: Netscape 形式の `cookies.txt` へのパス（既定：`Downloads/cookies.txt` をプロンプトで提案）。
+- `--batch-size`（整数、既定 `0`）: バッチあたりのアイテム数。`0` ですべてを一度にダウンロード。
+- `--concurrency`（整数、既定 `1`）: バッチ内で並列にダウンロードするアイテム数。
+- `--windows`（整数、既定 `1`）: Windows 上で複数のコマンドプロンプトウィンドウに URL/プレイリストを分割。
+
+内部ワーカーサブプロセスが使用する隠しオプション：
+
+- `--window-worker`, `--playlist-url`, `--playlist-track-start`, `--playlist-track-end`（対話型利用向けではありません）。
 
 スクリプトは以下を入力するよう促します：
 1. `cookies.txt` のパス
-2. ダウンロードするApple MusicのURL
+2. ダウンロードするApple Music の URL（複数の場合はスペース区切り）
 
 ### コマンドラインオプション
 - `urls`: プレイリスト、アルバム、曲、アーティスト、またはビデオのApple Music URL（オプション - 省略時はプロンプトで入力）
@@ -137,17 +161,25 @@ python download_playlist.py
 
 **対話モード（プロンプト入力）:**
 ```bash
-python download_playlist.py
+python GMU.py
 ```
 
-**コマンドライン引数を使用：**
+単一 URL 指定:
+
 ```bash
-python download_playlist.py "https://music.apple.com/playlist/..." --cookies-path "/path/to/cookies.txt"
+python GMU.py "https://music.apple.com/playlist/..." --cookies-path "C:\Users\you\Downloads\cookies.txt"
 ```
 
-**複数のURL:**
+バッチ実行例:
+
 ```bash
-python download_playlist.py "https://music.apple.com/playlist/..." "https://music.apple.com/song/..." --cookies-path "/path/to/cookies.txt"
+python GMU.py "https://music.apple.com/playlist/..." --cookies-path "C:\Users\you\Downloads\cookies.txt" --batch-size 10 --concurrency 3
+```
+
+複数ウィンドウに分割（Windows 向け）:
+
+```bash
+python GMU.py "https://music.apple.com/playlist/..." --cookies-path "C:\Users\you\Downloads\cookies.txt" --windows 3
 ```
 
 ## 機能
