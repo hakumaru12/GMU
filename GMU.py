@@ -18,7 +18,7 @@ from gamdl.interface import (
     AppleMusicUploadedVideoInterface,
 )
 
-DEFAULT_COOKIES_PATH = Path(r"C:\Users\haku12\Downloads\cookies.txt")
+DEFAULT_COOKIES_PATH = Path.home() / "Downloads" / "cookies.txt"
 
 
 def prompt_for_value(label: str, default: str | None = None) -> str:
