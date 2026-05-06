@@ -31,8 +31,8 @@ pip install -r requirements.txt
 1. Open your browser (Chrome, Firefox, Safari, etc.)
 2. Visit https://music.apple.com and log in to your Apple Music account
 3. Install a cookie export extension:
-   - **Chrome/Edge**: [Export Cookies](https://chrome.google.com/webstore/detail/export-cookies/) or [Cookie Editor](https://chrome.google.com/webstore/detail/cookie-editor/)
-   - **Firefox**: [Export Cookies](https://addons.mozilla.org/en-US/firefox/addon/export-cookies/)
+   - **Chrome/Edge**: [Cookie Editor](https://chromewebstore.google.com/detail/cookie-editor/ookdjilphngeeeghgngjabigmpepanpl)
+   - **Firefox**: [Export Cookies](https://addons.mozilla.org/en-US/firefox/addon/export-cookies-txt/)
 4. Export cookies in **Netscape format** and save as `cookies.txt`
 
 ## How to Use
@@ -109,8 +109,8 @@ pip install -r requirements.txt
 ### cookies.txt の取得方法
 1. ブラウザを開き、https://music.apple.com にアクセスしてApple Musicアカウントでログインします
 2. Cookie エクスポート拡張機能をインストール：
-   - **Chrome/Edge**: [Export Cookies](https://chrome.google.com/webstore/detail/export-cookies/) または [Cookie Editor](https://chrome.google.com/webstore/detail/cookie-editor/)
-   - **Firefox**: [Export Cookies](https://addons.mozilla.org/en-US/firefox/addon/export-cookies/)
+   - **Chrome/Edge**: [Cookie Editor](https://chromewebstore.google.com/detail/cookie-editor/ookdjilphngeeeghgngjabigmpepanpl)
+   - **Firefox**: [Export Cookies](https://addons.mozilla.org/en-US/firefox/addon/export-cookies-txt/)
 3. **Netscape形式** でクッキーをエクスポートして、`cookies.txt` として保存します
 
 ## 使い方
