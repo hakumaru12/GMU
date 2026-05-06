@@ -7,10 +7,9 @@
 ## English
 
 # GMU
-The tool that makes Gamdi (Apple Music downloader) more useful.
+The tool that makes [Gamdl](https://github.com/glomatico/gamdl) (Apple Music downloader) more useful.
 
 This repository provides `GMU.py`, a small wrapper around the `gamdl` library to download Apple Music playlists, songs and videos using a Netscape-format `cookies.txt`.
-
 ## Installation
 
 ### Requirements
@@ -99,7 +98,7 @@ See [LICENSE](LICENSE) file for details.
 ## 日本語
 
 # GMU
-Gamdi（Apple Musicダウンローダー）をより便利にするツール。
+[Gamdl](https://github.com/glomatico/gamdl)（Apple Musicダウンローダー）をより便利にするツール。
 
 ## インストール
 
