@@ -104,6 +104,7 @@ See [LICENSE](LICENSE) file for details.
 
 ## インストール
 .exeファイルから起動できるようになりました！[リリース](https://github.com/hakumaru12/GMU/releases/)よりダウンロードしてください
+
 これを使用した場合、以下のgamdlをインストールする操作は不要になります
 ### 必要な環境
 - Python 3.7以上
