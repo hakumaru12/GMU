@@ -11,6 +11,8 @@ The tool that makes [Gamdl](https://github.com/glomatico/gamdl) (Apple Music dow
 
 This repository provides `GMU.py`, a small wrapper around the `gamdl` library to download Apple Music playlists, songs and videos using a Netscape-format `cookies.txt`.
 ## Installation
+You can also use .exe file from [release](https://github.com/hakumaru12/GMU/releases/).
+If you use this file, you don't need to install gamdl.
 
 ### Requirements
 - Python 3.7 or higher
@@ -101,7 +103,8 @@ See [LICENSE](LICENSE) file for details.
 [Gamdl](https://github.com/glomatico/gamdl)（Apple Musicダウンローダー）をより便利にするツール。
 
 ## インストール
-
+.exeファイルから起動できるようになりました！[リリース](https://github.com/hakumaru12/GMU/releases/)よりダウンロードしてください
+これを使用した場合、以下のgamdlをインストールする操作は不要になります
 ### 必要な環境
 - Python 3.7以上
 - pip（Pythonパッケージマネージャー）
